@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <!-- Include Normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- .................. Css styleSheet................... -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- .......................Google Font link.............. -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <!-- ......................fontawesome link............  -->
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="login-container-display" id="login-container">
+        <form class="login-form" method="post">
+            <h2 class="login-form-heading">Please Login</h2>
+            <input type="text" class="form-control" name="username" placeholder="Email Address" required=""
+                autofocus="" />
+            <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+            <label class="checkbox" for="#rememberMe">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" required><span
+                    class="remember-text">Remember me</span>
+            </label>
+            <button class="black-background-btn" type="submit">Login</button>
+            <div class="sign-up-redirection">                
+                <p>Sign up here <button id="sign-up-direction" class="black-background-btn"><i class="fa fa-solid fa-arrow-right"></i></button></p>
+                
+            </div>
+        </form>
+    </div>
+    <div id="registration-form-container">
+        <h1 id="title">Bookbreeze Book Club Registration Form</h1>       
+        <form method="post" id="registration-form">
+            <fieldset>
+                <label class="block marg-bottom" id="name-label" for="name">1.What is your name?</label>
+                <input class="block marg-bottom width-for-inputs" type="text" name="name" id="name"
+                    placeholder="Enter your name" required>
+                <label class="block marg-bottom" id="number-label" for="number">2.Age(optional)</label>
+                <input class="block marg-bottom width-for-inputs" type="number" name="age" id="number" min="15" max="50"
+                    required>
+                <label class="block marg-bottom" id="email-label" for="email">3.Can we have your email?</label>
+                <input class="block marg-bottom width-for-inputs" type="email" name="email" id="email"
+                    placeholder="Enter your email" required>
+                <label class="block marg-bottom" id="password-label" for="new-password">4.Secure your account with a
+                    password</label>
+                <input class="block marg-bottom width-for-inputs" type="password" name="password" id="new-password"
+                    placeholder="Enter a new password" required>
+
+
+            </fieldset>
+            <fieldset>
+                <p class="marg-bottom">5.Which of these genres are you into?(Check all that apply)</p>
+                <label class="block marg-bottom-input" for="genre-1"><input type="checkbox" name="rec" id="genre-1">
+                    Fiction</label>
+                <label class="block marg-bottom-input" for="genre-2"><input type="checkbox" name="rec" id="genre-2">
+                    Non-Fiction</label>
+                <label class="block marg-bottom-input" for="genre-3"><input type="checkbox" name="rec" id="genre-3">
+                    Mystery/Thriller</label>
+                <label class="block marg-bottom-input" for="genre-4"><input type="checkbox" name="rec" id="genre-4">
+                    Science
+                    Fiction</label>
+                <label class="block marg-bottom-input" for="genre-5"><input type="checkbox" name="rec" id="genre-5">
+                    Fantasy</label>
+                <label class="block marg-bottom-input" for="genre-6"><input type="checkbox" name="rec" id="genre-6">
+                    Biography/Memoir</label>
+                <label class="block marg-bottom-input" for="genre-7"><input type="checkbox" name="rec" id="genre-7">
+                    Historical
+                    Fiction</label>
+            </fieldset>
+            <fieldset>
+                <p class="marg-bottom">6.Which one is your preferred format?</p>
+                <label class="block marg-bottom-input" for="paperback"><input type="radio" name="rec" id="paperback">
+                    Paperback</label>
+                <label class="block marg-bottom-input" for="hardcover"><input type="radio" name="rec" id="hardcover">
+                    Hardcover</label>
+                <label class="block marg-bottom-input" for="e-book"><input type="radio" name="rec" id="e-book">
+                    E-book</label>
+                <label class="block marg-bottom-input" for="audiobook"><input type="radio" name="rec" id="audiobook">
+                    Audiobook</label>
+            </fieldset>
+            <fieldset>
+                <p class="marg-bottom">7.When would be your preferred meeting time?</p>
+                <label class="block marg-bottom-input" for="weekday-evenings"><input type="radio" name="rec"
+                        id="weekday-evenings">
+                    Weekday
+                    evenings</label>
+                <label class="block marg-bottom-input" for="weekend-mornings"><input type="radio" name="rec"
+                        id="weekend-mornings">
+                    Weekend
+                    mornings</label>
+                <label class="block marg-bottom-input" for="weekend-afternoons"><input type="radio" name="rec"
+                        id="weekend-afternoons">
+                    Weekend
+                    afternoons</label>
+                <label class="block marg-bottom-input" for="everyday-evening"><input type="radio" name="rec"
+                        id="everyday-evening">
+                    Everyday
+                    evening</label>
+            </fieldset>
+            <fieldset>
+                <label class="block marg-bottom" for="dropdown">8.How many books do you typically read in 6
+                    months?</label>
+                <select class="block marg-bottom width-for-inputs" name="roles" id="dropdown" required>
+                    <option value="">Select one </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">4</option>
+                    <option value="6">more than 5</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label class="block marg-bottom" for="dropdown1">9.Can you tell us your commitment level?</label>
+                <select class="block marg-bottom width-for-inputs" name="features" id="dropdown1" required>
+                    <option value="">Select an option</option>
+                    <option value="1">Casual Reader (1 book every 2-3 months)</option>
+                    <option value="2">Regular Reader (1 book per month)</option>
+                    <option value="3">Avid Reader (more than 1 book per month)</option>
+                </select>
+            </fieldset>
+
+            <label class="block marg-bottom" for="textarea">10.Do you have any specific expectations or goals for
+                joining
+                the book
+                club?</label>
+            <textarea class="marg-bottom width-for-inputs" name="comments" id="textarea" cols="30" rows="10"
+                placeholder="Write something for us..." required></textarea>
+            <label id="disclaimer" class="block" for="disclaimer-input"><input type="checkbox" name="rec" id="disclaimer-input">
+                By clicking Sign Up, you agree to our <a class="white" href=""> Terms, Privacy
+                    Policy and Cookies Policy</a>.</label>
+            <button class="black-background-btn" id="sign-up-btn" type="submit">Sign Up</button>
+            <p id="login-text">Already a member  <button id="login-direction" class="black-background-btn"><i class="fa fa-solid fa-arrow-right"></i></button></button></p>
+        </form>
+    </div>    
+    <script src="./index.js"></script>
+</body>
+
+</html>
